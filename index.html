@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ProCapture for Windows</title>
+<meta name="description" content="ProCapture — a screen recorder and editor for Windows.">
+<style>
+  :root { --bg:#fff; --surface:#f6f7fb; --text:#1b1d28; --muted:#5a5f75; --rule:#e3e5ef; --accent:#5a63d8; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg:#0f1120; --surface:#171a2e; --text:#e9ebf5; --muted:#a2a8c4; --rule:#2a2e48; --accent:#8b93ff; } }
+  :root[data-theme="dark"] { --bg:#0f1120; --surface:#171a2e; --text:#e9ebf5; --muted:#a2a8c4; --rule:#2a2e48; --accent:#8b93ff; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);padding:0 16px;
+    font:17px/1.65 -apple-system,"Segoe UI",system-ui,Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:640px;margin:0 auto;padding:72px 0 96px;text-align:center}
+  h1{font-size:34px;margin:20px 0 6px;letter-spacing:-0.4px}
+  p.tag{color:var(--muted);font-size:19px;margin:0 0 36px}
+  ul{list-style:none;padding:0;margin:0 0 40px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  a.btn{display:inline-block;text-decoration:none;color:var(--text);background:var(--surface);
+    border:1px solid var(--rule);border-radius:10px;padding:12px 22px;font-weight:600}
+  a.btn:hover{border-color:var(--accent);color:var(--accent)}
+  footer{color:var(--muted);font-size:14px;border-top:1px solid var(--rule);padding-top:20px;margin-top:40px}
+  @media(max-width:520px){ .wrap{padding:44px 0 64px} h1{font-size:27px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <svg width="76" height="76" viewBox="0 0 64 64" aria-hidden="true">
+    <rect x="2" y="2" width="60" height="60" rx="15" fill="#272a4d"/>
+    <circle cx="32" cy="32" r="18" fill="none" stroke="#8b93ff" stroke-width="5"/>
+    <circle cx="32" cy="32" r="9" fill="#e5484d"/>
+  </svg>
+  <h1>ProCapture</h1>
+  <p class="tag">Screen Recorder &amp; Editor for Windows</p>
+  <ul>
+    <li><a class="btn" href="privacy.html">Privacy policy</a></li>
+    <li><a class="btn" href="contact.html">Support</a></li>
+  </ul>
+  <footer>Published by Bhaskar Orre</footer>
+</div>
+</body>
+</html>

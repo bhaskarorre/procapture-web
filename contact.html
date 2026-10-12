@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ProCapture — Support</title>
+<meta name="description" content="Get help with ProCapture, a Windows screen recorder and editor.">
+<style>
+  :root {
+    --bg: #ffffff; --surface: #f6f7fb; --text: #1b1d28; --muted: #5a5f75;
+    --rule: #e3e5ef; --accent: #5a63d8; --accent-ink: #ffffff; --field: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1120; --surface: #171a2e; --text: #e9ebf5; --muted: #a2a8c4;
+      --rule: #2a2e48; --accent: #8b93ff; --accent-ink: #11132a; --field: #121529;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1120; --surface: #171a2e; --text: #e9ebf5; --muted: #a2a8c4;
+    --rule: #2a2e48; --accent: #8b93ff; --accent-ink: #11132a; --field: #121529;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text); padding: 0 16px;
+    font: 17px/1.65 -apple-system, "Segoe UI", system-ui, Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 56px 0 96px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 10px; }
+  .mark { flex: none; }
+  h1 { font-size: 29px; margin: 0; letter-spacing: -0.3px; line-height: 1.2; }
+  .sub { color: var(--muted); margin: 0 0 34px; }
+  h2 { font-size: 19px; margin: 36px 0 10px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin: 0 0 8px; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--surface); border: 1px solid var(--rule);
+    border-radius: 14px; padding: 24px;
+  }
+  label { display: block; font-weight: 600; font-size: 15px; margin: 0 0 6px; }
+  .row { margin-bottom: 18px; }
+  input, textarea {
+    width: 100%; padding: 11px 13px; font: inherit; font-size: 16px;
+    color: var(--text); background: var(--field);
+    border: 1px solid var(--rule); border-radius: 9px;
+  }
+  input:focus, textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+  textarea { min-height: 150px; resize: vertical; }
+  .hint { color: var(--muted); font-size: 14px; margin: 6px 0 0; }
+  button {
+    background: var(--accent); color: var(--accent-ink); border: 0;
+    border-radius: 9px; padding: 12px 26px; font: inherit; font-weight: 650;
+    font-size: 16px; cursor: pointer;
+  }
+  button:hover { filter: brightness(1.08); }
+  footer {
+    margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: 14px;
+  }
+  @media (max-width: 520px) {
+    .wrap { padding: 36px 0 64px; }
+    h1 { font-size: 24px; }
+    .card { padding: 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <svg class="mark" width="52" height="52" viewBox="0 0 64 64" aria-hidden="true">
+      <rect x="2" y="2" width="60" height="60" rx="15" fill="#272a4d"/>
+      <circle cx="32" cy="32" r="18" fill="none" stroke="#8b93ff" stroke-width="5"/>
+      <circle cx="32" cy="32" r="9" fill="#e5484d"/>
+    </svg>
+    <div><h1>ProCapture Support</h1></div>
+  </header>
+  <p class="sub">Questions, bugs and feedback — this form reaches the developer directly.</p>
+
+  <h2>Before you write</h2>
+  <p>If you hit a problem while using the app, <strong>Report a problem</strong> inside
+  ProCapture is the faster route — it attaches the app version, your settings and a
+  diagnostic log, so the cause is usually obvious straight away. It shows you exactly
+  what will be sent before anything leaves your computer.</p>
+  <p>Use this form for anything else: buying and licensing questions, feature requests,
+  or if the app will not start at all.</p>
+
+  <h2>Send a message</h2>
+  <div class="card">
+    <form action="https://formsubmit.co/9184a5f26d7134d628a6a41828c166af" method="POST">
+      <input type="hidden" name="_subject" value="ProCapture support enquiry">
+      <input type="hidden" name="_template" value="table">
+      <!-- honeypot: bots fill this, humans never see it -->
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+      <div class="row">
+        <label for="name">Your name</label>
+        <input id="name" type="text" name="name" required autocomplete="name">
+      </div>
+      <div class="row">
+        <label for="email">Your email</label>
+        <input id="email" type="email" name="email" required autocomplete="email">
+        <p class="hint">Used only to reply to you.</p>
+      </div>
+      <div class="row">
+        <label for="message">How can I help?</label>
+        <textarea id="message" name="message" required
+          placeholder="What happened, and what were you doing at the time?"></textarea>
+      </div>
+      <button type="submit">Send message</button>
+    </form>
+  </div>
+
+  <h2>Privacy</h2>
+  <p>What you send here is used solely to answer you. It is not sold, shared or used
+  for marketing. See the <a href="privacy.html">privacy policy</a> for what the app
+  itself does and does not collect.</p>
+
+  <footer>
+    ProCapture for Windows · Published by Bhaskar Orre
+  </footer>
+
+</div>
+</body>
+</html>

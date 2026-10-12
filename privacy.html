@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ProCapture — Privacy Policy</title>
+<meta name="description" content="Privacy policy for ProCapture, a Windows screen recorder and editor that runs entirely on your own computer.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f6f7fb;
+    --text: #1b1d28;
+    --muted: #5a5f75;
+    --rule: #e3e5ef;
+    --accent: #5a63d8;
+    --accent-soft: #eef0fd;
+    --good: #0f7b4f;
+  }
+  :root:not([data-theme="light"]) {
+    @media (prefers-color-scheme: dark) {
+      --bg: #0f1120; --surface: #171a2e; --text: #e9ebf5; --muted: #a2a8c4;
+      --rule: #2a2e48; --accent: #8b93ff; --accent-soft: #1d2140; --good: #4ade9b;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1120; --surface: #171a2e; --text: #e9ebf5; --muted: #a2a8c4;
+      --rule: #2a2e48; --accent: #8b93ff; --accent-soft: #1d2140; --good: #4ade9b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1120; --surface: #171a2e; --text: #e9ebf5; --muted: #a2a8c4;
+    --rule: #2a2e48; --accent: #8b93ff; --accent-soft: #1d2140; --good: #4ade9b;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.65 -apple-system, "Segoe UI", system-ui, Roboto, Helvetica, Arial, sans-serif;
+    padding: 0 16px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 0 96px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+  .mark { flex: none; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0; letter-spacing: -0.3px; }
+  .updated { color: var(--muted); font-size: 15px; margin: 6px 0 36px; }
+  h2 {
+    font-size: 21px; margin: 40px 0 12px; letter-spacing: -0.2px;
+    padding-top: 22px; border-top: 1px solid var(--rule);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin: 0 0 9px; }
+  strong { font-weight: 650; }
+  code {
+    background: var(--surface); border: 1px solid var(--rule); border-radius: 5px;
+    padding: 1px 6px; font-size: 14px;
+    font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+    word-break: break-word;
+  }
+  a { color: var(--accent); }
+  .lede {
+    background: var(--surface); border: 1px solid var(--rule);
+    border-radius: 12px; padding: 18px 20px; margin: 0 0 8px;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+  .callout {
+    background: var(--accent-soft); border-left: 3px solid var(--accent);
+    border-radius: 0 10px 10px 0; padding: 14px 18px; margin: 18px 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  footer {
+    margin-top: 52px; padding-top: 20px; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: 14px;
+  }
+  @media (max-width: 520px) {
+    .wrap { padding: 36px 0 64px; }
+    h1 { font-size: 25px; }
+    body { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <svg class="mark" width="52" height="52" viewBox="0 0 64 64" aria-hidden="true">
+      <rect x="2" y="2" width="60" height="60" rx="15" fill="#272a4d"/>
+      <circle cx="32" cy="32" r="18" fill="none" stroke="#8b93ff" stroke-width="5"/>
+      <circle cx="32" cy="32" r="9" fill="#e5484d"/>
+    </svg>
+    <div>
+      <h1>ProCapture — Privacy Policy</h1>
+    </div>
+  </header>
+  <p class="updated">Last updated: 12 October 2026</p>
+
+  <div class="lede">
+    <p>ProCapture is a screen recorder that runs entirely on your own computer.
+    This policy explains the only situation in which any data leaves your device.</p>
+  </div>
+
+  <h2>What ProCapture does not do</h2>
+  <ul>
+    <li>It does not create an account, and does not ask for your name or email to work.</li>
+    <li>It does not upload, stream or back up your recordings, screenshots or audio.
+      Everything you capture stays in the folder you choose (by default
+      <code>Videos\ProCapture</code>) until you move or delete it.</li>
+    <li>It contains no advertising, no analytics, and no usage or telemetry tracking.
+      Nothing is sent when you record, edit or export.</li>
+  </ul>
+
+  <h2>The one thing that is sent — and only if you choose to send it</h2>
+  <p>If you use <strong>Report a problem</strong>, the report you submit is sent to
+  the developer so the issue can be investigated. Before sending, the app shows you
+  the exact contents via <strong>See exactly what will be sent</strong>. A report
+  contains:</p>
+  <ul>
+    <li>the description you type, and your email address <strong>only if you enter one</strong>;</li>
+    <li>the app version, Windows version, CPU/RAM summary, screen resolutions and locale;</li>
+    <li>your ProCapture settings (quality, format, which sources are enabled) — this
+      excludes anything you typed, such as watermark text or your save-folder path;</li>
+    <li>the last portion of the app's diagnostic log, which records app events and errors.
+      <strong>Your Windows account name is removed from all paths before sending.</strong></li>
+  </ul>
+
+  <div class="callout">
+    <p>You can untick <strong>Include technical details</strong> to send only your
+    description. Reports never contain your recordings, screenshots, audio,
+    keystrokes or the contents of your screen.</p>
+  </div>
+
+  <p>Reports are delivered by email through the form service
+  <a href="https://formsubmit.co" rel="noopener noreferrer">FormSubmit</a> and are
+  used solely to diagnose and fix the problem you reported. They are not sold,
+  shared or used for marketing. If you provided an email address, it is used only
+  to reply to you.</p>
+
+  <h2>Purchases</h2>
+  <p>If you buy ProCapture through the Microsoft Store, the purchase is handled
+  entirely by Microsoft under its own terms and privacy policy. ProCapture does not
+  see, receive or store your payment details.</p>
+
+  <h2>Data stored on your computer</h2>
+  <ul>
+    <li><strong>Recordings and screenshots</strong> — in your chosen output folder.</li>
+    <li><strong>Settings</strong> — in <code>%APPDATA%\ProCapture</code>.</li>
+    <li><strong>A diagnostic log</strong> — in <code>%APPDATA%\ProCapture\logs</code>,
+      capped at about 2 MB and overwritten over time. Open it any time with
+      Settings → Open log folder.</li>
+    <li><strong>Undelivered reports</strong> — if a report cannot be sent (for example,
+      you are offline), it is kept in <code>%APPDATA%\ProCapture\reports</code> and sent
+      on a later launch. Deleting the file cancels it.</li>
+  </ul>
+  <p>None of this is transmitted anywhere except as described above.</p>
+
+  <h2>Permissions ProCapture uses</h2>
+  <ul>
+    <li><strong>Screen capture</strong> — to record your screen or a window, only while recording.</li>
+    <li><strong>Microphone and camera</strong> — only when you switch those sources on.
+      Windows shows its own indicator while they are in use.</li>
+    <li><strong>Keyboard and mouse monitoring</strong> — used only for the optional
+      on-screen click, cursor-highlight and keystroke-display effects. These are
+      <strong>off by default</strong>, they only draw shapes on screen while a recording
+      is running, and nothing about your input is stored or transmitted.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>ProCapture is a general-purpose tool and is not directed at children.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the updated version will be published with the app and
+  the date above will change.</p>
+
+  <h2>Contact</h2>
+  <p>Use <strong>Report a problem</strong> inside ProCapture, and include your email
+  address if you would like a reply.</p>
+  <p>You can also reach the developer through the
+  <a href="contact.html">support form</a>.</p>
+
+  <footer>
+    ProCapture for Windows · Published by Bhaskar Orre
+  </footer>
+
+</div>
+</body>
+</html>
