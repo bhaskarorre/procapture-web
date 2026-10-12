@@ -160,10 +160,13 @@
     <li><strong>Screen capture</strong> — to record your screen or a window, only while recording.</li>
     <li><strong>Microphone and camera</strong> — only when you switch those sources on.
       Windows shows its own indicator while they are in use.</li>
-    <li><strong>Keyboard and mouse monitoring</strong> — used only for the optional
-      on-screen click, cursor-highlight and keystroke-display effects. These are
-      <strong>off by default</strong>, they only draw shapes on screen while a recording
-      is running, and nothing about your input is stored or transmitted.</li>
+    <li><strong>Keyboard and mouse input</strong> — while a video recording is running,
+      ProCapture listens to mouse and keyboard events system-wide. Mouse events draw the
+      click ripples (<strong>on by default</strong>) and the cursor halo (off by default),
+      and let you resize the webcam bubble with the scroll wheel. Keyboard events are used
+      only when the keystroke overlay (off by default) is switched on, to show the shortcut
+      you pressed. Outside a recording these events are ignored, and nothing about your
+      input is stored, logged or transmitted.</li>
   </ul>
 
   <h2>Children</h2>
